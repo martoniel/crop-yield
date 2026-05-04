@@ -1251,3 +1251,12 @@ export default function App() {
     </div>
   );
 }
+
+// ─────────────────────────────────────────
+// RENDER APP TO DOM
+// ─────────────────────────────────────────
+import { createRoot } from "react-dom/client";
+
+const container = document.getElementById("root");
+const root = createRoot(container);
+root.render(<App />);
