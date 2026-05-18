@@ -94,6 +94,10 @@ class PredictionResponse(BaseModel):
 
 # ----- Records used by the history endpoints -----------------
 class PredictionRecord(BaseModel):
+    model_config = {
+        "from_attributes": True,
+    }
+
     id: int
     user_id: Optional[int] = None
     crop_name: str
