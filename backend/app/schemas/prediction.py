@@ -111,3 +111,34 @@ class PredictionResponse(BaseModel):
     input_summary: InputSummary
     timestamp: datetime
     status: str = "success"
+
+
+# ----- Records used by the history endpoints -----------------
+class PredictionRecord(BaseModel):
+    id: int
+    user_id: Optional[int] = None
+    crop_name: str
+    region: str
+    soil_type: str
+    rainfall: float
+    temperature: float
+    humidity: float
+    fertilizer_usage: float
+    pesticide_usage: float
+    area_cultivated: float
+    season: str
+    year: int
+    predicted_yield: float
+    yield_unit: str
+    confidence_score: Optional[float] = None
+    model_used: str
+    status: str
+    notes: Optional[str] = None
+    created_at: datetime
+
+
+class PredictionList(BaseModel):
+    total: int
+    page: int
+    page_size: int
+    results: list[PredictionRecord]
