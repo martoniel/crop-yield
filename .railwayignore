@@ -1,0 +1,5 @@
+crop-yield-app.jsx
+crop-yield-app.zip
+node_modules/
+.git/
+.env.local
