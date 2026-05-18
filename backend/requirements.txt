@@ -1,0 +1,39 @@
+# ─────────────────────────────────────────────────────────────
+# CropYieldAI — Backend Dependencies
+# Final Year Project · Federal University Dutsin-Ma
+# ─────────────────────────────────────────────────────────────
+
+# Core Framework
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+
+# Data validation & settings
+pydantic==2.7.1
+pydantic-settings==2.2.1
+python-dotenv==1.0.1
+
+# Database
+sqlalchemy==2.0.30
+aiosqlite==0.20.0          # async SQLite driver
+
+# ML / Data science
+scikit-learn==1.4.2
+pandas==2.2.2
+numpy==1.26.4
+joblib==1.4.2
+
+# Authentication
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-multipart==0.0.9
+
+# HTTP / CORS
+httpx==0.27.0
+
+# Logging & utilities
+python-json-logger==2.0.7
+
+# Development / Testing
+pytest==8.2.0
+pytest-asyncio==0.23.6
+httpx==0.27.0
