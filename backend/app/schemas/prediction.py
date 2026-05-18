@@ -4,37 +4,16 @@ from pydantic import BaseModel, Field, field_validator, model_validator
 
 # Global regions (101 countries)
 VALID_REGIONS = {
-    "Albania", "Algeria", "Angola", "Argentina", "Armenia", "Australia",
-    "Austria", "Azerbaijan", "Bahamas", "Bahrain", "Bangladesh", "Belarus",
-    "Belgium", "Botswana", "Brazil", "Bulgaria", "Burkina Faso", "Burundi",
-    "Cameroon", "Canada", "Chad", "China", "Colombia", "Congo",
-    "Costa Rica", "Croatia", "Cyprus", "Czech Republic", "Denmark",
-    "Dominican Republic", "Ecuador", "Egypt", "El Salvador", "Eritrea",
-    "Ethiopia", "Fiji", "Finland", "France", "Gabon", "Gambia",
-    "Georgia", "Germany", "Ghana", "Greece", "Guatemala", "Guinea",
-    "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hungary", "Iceland",
-    "India", "Indonesia", "Iran", "Iraq", "Ireland", "Israel", "Italy",
-    "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Korea", "Kuwait",
-    "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia",
-    "Libya", "Lithuania", "Luxembourg", "Madagascar", "Malawi", "Malaysia",
-    "Mali", "Malta", "Mauritania", "Mauritius", "Mexico", "Moldova",
-    "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar", "Namibia",
-    "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria",
-    "Norway", "Oman", "Pakistan", "Panama", "Papua New Guinea", "Paraguay",
-    "Peru", "Philippines", "Poland", "Portugal", "Qatar", "Romania",
-    "Russia", "Rwanda", "Saudi Arabia", "Senegal", "Serbia", "Sierra Leone",
-    "Singapore", "Slovakia", "Slovenia", "Somalia", "South Africa",
-    "South Sudan", "Spain", "Sri Lanka", "Sudan", "Suriname", "Sweden",
-    "Switzerland", "Syria", "Tajikistan", "Tanzania", "Thailand",
-    "Timor-Leste", "Togo", "Trinidad and Tobago", "Tunisia", "Turkey",
-    "Turkmenistan", "Uganda", "Ukraine", "United Arab Emirates",
-    "United Kingdom", "United States", "Uruguay", "Uzbekistan", "Venezuela",
-    "Vietnam", "Yemen", "Zambia", "Zimbabwe",
+    "Abia", "Adamawa", "Akwa Ibom", "Anambra", "Bauchi", "Bayelsa", "Benue",
+    "Borno", "Cross River", "Delta", "Ebonyi", "Edo", "Ekiti", "Enugu",
+    "Gombe", "Imo", "Jigawa", "Kaduna", "Kano", "Katsina", "Kebbi",
+    "Kogi", "Kwara", "Lagos", "Nasarawa", "Niger", "Ogun", "Ondo", "Osun",
+    "Oyo", "Plateau", "Rivers", "Sokoto", "Taraba", "Yobe", "Zamfara", "FCT",
 }
 
 VALID_CROPS = {
-    "Maize", "Rice", "Wheat", "Cassava", "Yams", "Sorghum",
-    "Potatoes", "Soybeans", "Sweet potatoes", "Plantains",
+    "Maize", "Rice", "Sorghum", "Cassava", "Wheat", "Yam", "Cowpea",
+    "Groundnut", "Millet", "Sugarcane", "Tomato", "Cotton",
 }
 
 VALID_SOIL_TYPES = {
