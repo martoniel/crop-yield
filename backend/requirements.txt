@@ -18,8 +18,8 @@ aiosqlite==0.20.0          # async SQLite driver
 
 # ML / Data science
 scikit-learn==1.5.2
-pandas==2.2.2
-numpy==1.26.4
+pandas==2.4.5
+numpy==2.2.5
 joblib==1.4.2
 
 # Authentication
